@@ -17,4 +17,5 @@ jobs:
       with:
         go-version: ${{ matrix.go-version }}
     - run: |
-        go run apolog_test.go
+        go get github.com/axiomsamarth/apolog
+        go test apolog_test.go

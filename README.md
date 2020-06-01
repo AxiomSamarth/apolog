@@ -1,5 +1,5 @@
 
-![Go package](https://github.com/AxiomSamarth/Learning-GoLang/workflows/workflow/badge.svg)
+![Apolog Build](https://github.com/AxiomSamarth/apolog/workflows/workflow/badge.svg)
 
 # Apolog
 Apolog is a Golang package for logging. Apolog supports different levels of logging and also supports multiple logging backends like syslog and file logging. 
