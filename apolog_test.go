@@ -3,7 +3,7 @@ package apolog_test
 import (
 	"testing"
 
-	"../apolog"
+	apolog "github.com/axiomsamarth/apolog/apolog"
 )
 
 // TestInfo function tests Info level of logging
