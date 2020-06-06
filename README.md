@@ -35,7 +35,7 @@ As of now different level of logging have been implemented with backend being sy
 
 - File based logging backend
 - Context based logging with common initialization of the logging path
-- Log filters
+- Log filters like ACCEPT, DENY and NUETRAL
 
 ## Contribute
 Thank you for that thought! Contribution guidelines will be soon put up. No PRs will be merged till then. However, feel free to raise the issues in the meantime.
