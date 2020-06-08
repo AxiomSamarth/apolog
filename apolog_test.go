@@ -35,3 +35,9 @@ func TestTrace(t *testing.T) {
 	var data = []byte(`Log this!`)
 	apolog.Trace(data)
 }
+
+// TestSetContext functions tests the SetContext function of apolog
+func TestSetContext(t *testing.T) {
+	var loginContext = &apolog.Apolog{Filepath: "./log/log.txt"}
+	loginContext.SetContext()
+}

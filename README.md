@@ -18,6 +18,8 @@ go install apolog
 
 Import the `apolog` package from `github.com/axiomsamarth/apolog` and employ the exported functions `Info`, `Error`, `Warn`, `Debug`, `Trace`, `Fatal` that implements the logging levels accordingly.
 
+<b> Example syslog logging </b>
+
 ```
 package main
 
@@ -30,15 +32,37 @@ func main() {
 }
 ```
 
+<b> Example file based logging </b>
+```
+package main
+
+import (
+	"fmt"
+
+	apolog "github.com/axiomsamarth/apolog"
+)
+
+func main() {
+
+	var logFile := "./logs/logfile.log"
+	var loginContext = &apolog.Apolog{Filepath: logFile}
+	loginContext.SetContext()
+
+	var data = []byte(`Log this!`)
+	apolog.Info(data)
+}
+```
+
 ## Current Status
-As of now different level of logging have been implemented with backend being syslog. Following features are being worked upon and would be pushed soon:
+As of now:
 
-- File based logging backend
-- Context based logging with common initialization of the logging path
-- Log filters
+- Different level of logging have been implemented.
+- File based and syslog logging backends are supported.
 
-## Contribute
-Thank you for that thought! Contribution guidelines will be soon put up. No PRs will be merged till then. However, feel free to raise the issues in the meantime.
+Following features are being worked upon and would be pushed soon:
 
-## Contact
-For anything related to the development of the apolog Golang logging package, this repository, concerns, queries and so, drop an email. My email id is - deyagondsamarth@gmail.com
+- Context based logging with common initialization of the logging path.
+- Log filters.
+
+## Contributing guidelines
+We welcome community contribution to this project. Please visit the [Contributing.md](Contributing.md) 
