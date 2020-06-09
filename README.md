@@ -8,7 +8,7 @@ Apolog is a Golang package for logging. Apolog supports different levels of logg
 - Go=1.13.8 darwin/amd64
 
 ## Installation and Usage
-Download the repository and navigate to `apolog` folder. Run the below commands - 
+Download the repository and navigate to `src` folder which has the `apolog` package. Run the below commands - 
 
 ```
 export GOPATH=$(pwd)
@@ -28,7 +28,8 @@ import (
 )
 
 func main() {
-	apolog.Info(`Log this at INFO level`)
+	var data = []byte(`Log this at INFO level`)
+	apolog.Info(data)
 }
 ```
 
